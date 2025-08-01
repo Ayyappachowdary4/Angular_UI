@@ -1,0 +1,23 @@
+
+<Script>
+    let username = prompt("Enter you name");
+
+    let wantsToContinue = confirm(" HI " +  username  + " still u want to contine");
+
+    if(wantsToContinue) {
+
+        let num1=parseFloat(prompt("Enter the First number"));
+        let num2=parseFloat(prompt("Enter the Second Number"));
+
+        if(isNaN(num1) || isNaN(num2))
+    {
+        alert("Please enter valid numbers:");
+    }else{
+        let result = num1 + num2;
+        alert(username + ", the sum of " + num1 + " and " + num2 + " is " +result);
+        console.log("user " + username + "calculated sum:", result); 
+    } }else {
+        alert("okay,we see u next time");
+    }
+
+</Script>

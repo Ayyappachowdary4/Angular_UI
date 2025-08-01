@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beautiful Card Example</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f0f4f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      max-width: 350px;
+      padding: 30px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      object-fit: cover;
+      border: 4px solid #4a90e2;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 10px;
+      font-weight: 700;
+      font-size: 24px;
+    }
+
+    p {
+      color: #666;
+      font-size: 16px;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .btn {
+      background-color: #4a90e2;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background-color: #357ABD;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img class="avatar" src="https://d1vcy8ih94g58p.cloudfront.net/eyJrZXkiOiIyNTcyMjlcLzBRQ3hrSUNpWVBvMDYyTXZMNTZ3aU1xbFprdFJHdFFuN05vVTBUbHcuanBnIiwiYnVja2V0Ijoid2lyZXN0b2NrLW9yaWdpbmFsLXByb2R1Y3Rpb24iLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEwMjQsImZpdCI6ImNvdmVyIn0sIm92ZXJsYXlXaXRoIjp7ImJ1Y2tldCI6IndpcmVzdG9jay1vcmlnaW5hbC1wcm9kdWN0aW9uIiwia2V5Ijoid2F0ZXJtYXJrc1wvd2F0ZXJtYXJrLXJlcGVhdC12MC4wLjIucG5nIiwib3B0aW9ucyI6eyJ0aWxlIjp0cnVlfX0sImpwZWciOnsicXVhbGl0eSI6ODB9fX0=?signature=6bf36427736edd35b140fa99fce9a56fdbb0c7bdbd564be78d1e8e3389fb9bf6" alt="User Avatar" />
+    <h2>Murali Dadi</h2>
+    <p>Java devloper who loves JavaScript and CSS real time magic.</p>
+    <a href="#" class="btn">Contact Me</a>
+  </div>
+
+</body>
+</html>
