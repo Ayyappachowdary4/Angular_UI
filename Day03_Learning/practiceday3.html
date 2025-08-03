@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <script>
+            var a=10;
+            function f3(){
+                console.log('F3 starts');
+                console.log('F3 ends');
+            }
+            function f2(){
+                console.log('f2 starts');
+                f3();
+                console.log('f2 ends');
+            }
+            function f1(){
+                console.log('f1 starts');
+                f2();
+                console.log('f1 ends');
+            }
+            f1();
+            console.log('global code ends ')
+        </script>
+    </body>
+</html>

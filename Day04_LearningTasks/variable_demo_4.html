@@ -1,0 +1,19 @@
+<script>
+    function test() {
+        if (true) {
+            var a = 10;
+            console.log('block ', a); // 10
+        }
+        console.log('function ', a); // 10
+    }
+    test();
+
+    function test2() {
+        if (true) {
+            let a = 10;
+            console.log('block ', a); // 10
+        }
+        console.log('function ', a); // error
+    }
+    test2();
+</script>

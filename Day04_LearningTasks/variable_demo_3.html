@@ -1,0 +1,19 @@
+<script>
+    var a=10;
+    console.log(a);
+
+    var a=20;
+    console.log(a);
+
+    let c = 30;
+    console.log('Global ', c);
+    function test(){
+        let c =  200;
+        console.log('function' , c);
+        if(true){
+            let c = 2000;
+            console.log('block ', c);
+        }
+    }
+    test();
+</script>
