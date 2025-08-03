@@ -1,0 +1,16 @@
+<script>
+    let arr=[5,10,15,20,30];
+
+    //we are increasing by 5
+    function increaseBy5(val){
+        return val+5;
+    }
+    
+    let result1= arr.map(increaseBy5);
+    //so here map() is highorder, and increaseby5 is call back
+    console.log(result1);
+
+    let result2=arr.map((val) => val+8);
+    console.log(result2);
+
+</script>

@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <button id="btn1">Button1</button>
+        <button id="btn2">Button2</button>
+        <button id ="btn3">Button3</button>
+        <button id="btn4">Button4</button>
+<script>
+      function changeColor() {
+        this.stylebackgroundcolor ='red';
+        console.log(this);
+      }
+
+    //  let changeColor = () => { // Arrow - this is static ( this = window )
+    //         console.log(this);
+    //         this.style.backgroundColor = 'red';
+        // }
+        document.getElementById('btn1').addEventListener('click', changeColor);
+        document.getElementById('btn2').addEventListener('click', changeColor);
+        document.getElementById('btn3').addEventListener('click', changeColor);
+        document.getElementById('btn4').addEventListener('click', changeColor);
+
+</script>
+
+
+    </body>
+</html>
