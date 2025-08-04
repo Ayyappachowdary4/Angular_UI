@@ -1,0 +1,147 @@
+<!-- 1. WAP to reverse a string
+	input:- 'sachin'
+	output:- 'nihcas' -->
+
+    <!-- <script>
+
+        let str='sachin';
+
+        let rev=str.split('').reverse();
+        j=rev.join('');
+        console.log(j);
+    </script> -->
+
+    <!-- ------------------------------------------------------------- -->
+<!-- 2. WAP to reverse words
+	input:- 'This is javascript class'
+	output:- 'class javascript is this' -->
+
+<!-- <script>
+    let str = 'This is javascript class';
+
+        let rev=str.split(' ').reverse();
+        j=rev.join(' ');
+        console.log(j.toLowerCase());
+</script> -->
+-------------------------------------------------------------------------
+<!-- 3. WAP to print the first non-repeated character in a string
+   input:- 'entertainment'
+   output:- r -->
+<!-- 
+<script>
+  let str = 'entertainment';
+    //now we  Printing the  the first non-repeated char
+   
+   for(char of str){
+    if(str.indexOf(char) == str.lastIndexOf(char)){
+     console.log(char);
+     break;
+    }
+   }
+</script>
+
+-------------------------------------------------------------------------- -->
+
+<!-- 4. WAP to print a string in title case
+	input:- 'this is javascript class'
+   output:- 'This Is Javascript Class' -->
+
+<!-- 
+    <script>
+
+    let str=' this is javascript class';
+    
+      let res = str.replace(/\b\w/g, ch => ch.toUpperCase());
+
+     console.log(res)
+
+   </script> 
+
+   -------------------------------------------------------------------------- -->
+   <!-- 5. WAP to find longest word in a sentence
+	input:- 'this is javascript class'
+    output:- javascript -->
+
+    <!-- <script>
+    let sentence = "JavaScript is a powerful scripting language";
+
+    let words = sentence.split(' ');
+
+    let long = words.reduce(function(curLongest, curWord) {
+        if (curWord.length > curLongest.length) {
+            return currentWord;
+        } else {
+            return curLongest;
+        }
+    });
+    console.log(long);
+</script> -->
+
+<!-- -----------------------------------------------------------------------------
+6. WAP to print Account number
+   input:- '12345678987'
+   output:- '12*******87' -->
+
+   <!-- <script>
+    let num= '12345678987';
+    let op= num[0]+num[1]+'*******'+num[9]+num[10]
+    console.log(op)
+   </script>
+
+   --------------------------------------------------------------------------- -->
+<!--       
+7. WAP to print Credit-card number
+   input:- '1111222233334444'
+   output:- '1111-2222-3333-4444' -->
+<!-- 
+    <script>
+    let num= '1111222233334444';
+    let op= num[0]+num[1]+num[2]+num[3]+'-'+num[4]+num[5]+num[6]+num[7]+'-'+num[8]+num[9]+num[10]+num[11]+'-'+num[12]+num[13]+num[14]+num[15]
+    console.log(op)
+   </script>
+   ---------------------------------------------------------------------------------------------------------------------------------------------------- -->
+   <!-- 8. WAP to check if 2 strings are anagram or not
+	'listen' - 'silent'    anagram(every char of str1 should be there in str2)
+	 -->
+<!-- 
+     <script>
+        let str1='listen';
+        let str2='silent';
+
+        let sort1=str1.split('').sort().join('');
+        let sort2=str2.split('').sort().join('');
+
+        if(sort1==sort2){
+            console.log("this will be anagram ");}
+        else{
+            console.log("this is not anagram ")
+        }
+     </script>
+
+     ----------------------------------------------------------------------------------------- -->
+
+     <!-- 9. WAP to remove special character from a string
+   input:- 'hello@#hi&'
+   output:- 'hellohi' -->
+
+<!-- 
+   <script>
+    let ip = 'hello@#hi&';
+    let op=ip[0]+ip[1]+ip[2]+ip[3]+ip[4]+ip[7]+ip[8]
+    console.log(op);
+   </script>
+   ----------------------------------------------------- -->
+
+   <!-- 10. WAP to move all the special characters to the end of the string
+	input:- 'hello@#hi&'
+   output:- 'hellohi@#&' -->
+
+    <script>
+    let ip = 'hello@#hi&';
+    let op=ip[0]+ip[1]+ip[2]+ip[3]+ip[4]+ip[7]+ip[8]+ip[5]+ip[6]+ip[9]
+    console.log(op);
+   </script>
+
+
+
+---------------------------Done------------------------------------
