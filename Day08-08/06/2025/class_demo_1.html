@@ -1,0 +1,32 @@
+<script>
+    function add(a, b) { // normal function
+        console.log(a + b)
+    }
+    add(10, 20);
+
+    // ES_5
+    function Student(roll, name, add, course) { // constructor function / class
+        this.roll = roll;
+        this.name = name;
+        this.add = add;
+        this.course = course;
+    }
+    let std1 = new Student(101, 'pavan', 'virginia', 'Java');
+    let std2 = new Student(102, 'sowmya', 'tennesse', '.net');
+    console.log(std1)
+    console.log(std2)
+
+
+    // ES_6
+    class Mobile {
+        constructor(id, price, brand, madeYear, color) {
+            this.id = id;
+            this.price = price;
+            this.brand = brand;
+            this.madeYear = madeYear;
+            this.color = color;
+        }
+    }
+    let mob1 = new Mobile('1a1b1c', 20000, 'Samsung', 2024, 'Blue')
+    console.log(mob1)
+</script>

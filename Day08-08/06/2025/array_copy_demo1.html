@@ -1,0 +1,27 @@
+<script>
+    let arr1 = [10, 20];
+    let arr2 = arr1;     // Reference Copy / address copy
+    // a new array is not being created, the same array is stored in 2 variables 
+    arr1.push(30);
+    arr2.push(40);
+    console.log(arr1);  // [10, 20, 30, 40]
+    console.log(arr2);  // [10, 20, 30, 40]
+
+    let arr3 = [10, 20, [30, 31]];
+    let arr4 = [...arr3]; // spread - shallow copy - value copy
+    // values of arr3 are copied to arr4
+    // Top level items are copied by value but nested arrays are copied by address
+    arr3.push(40, 50);
+    arr3[2].push(32,33,34);
+    console.log(arr3); // [10,20,[30,31,32,33,34],40,50]
+    console.log(arr4); // [10,20,[30,31,32,33,34]]
+
+    let arr5 = [10, 20, [30, 31]];
+    let arr6 = structuredClone(arr5) // structuredClone - deep copy - value copy
+    // values of arr5 are copied to arr6, everything is copied by value
+    // not only Top level values , but also nested values are copied by value
+    arr5.push(40, 50);
+    arr5[2].push(32,33,34);
+    console.log(arr5); // [10,20,[30,31,32,33,34],40,50]
+    console.log(arr6); // [10,20,[30,31]]
+</script>
