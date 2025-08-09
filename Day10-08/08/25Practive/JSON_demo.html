@@ -1,0 +1,22 @@
+<script>
+    let user = { name: 'sachin', age: 35, add: 'mumbai' };
+
+    // object data cann't be transffered , stored in file , stored in session storage
+    document.write(user);
+    sessionStorage.setItem('userData1', user);
+
+    // how to solve the above problems
+    let userStr = JSON.stringify(user);
+
+    document.write(userStr);
+    sessionStorage.setItem('userData2', userStr);
+
+    // while reading back in object format
+    let userInfo = sessionStorage.getItem('userData2')
+    console.log(userInfo); // string
+    console.log(userInfo.name, userInfo.age); // string
+
+    // convert string to object
+    let userObj = JSON.parse(userInfo);
+    console.log(userObj.name, userObj.age)
+</script>

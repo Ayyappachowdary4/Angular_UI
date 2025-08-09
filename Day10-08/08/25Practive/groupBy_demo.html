@@ -1,0 +1,14 @@
+<script>
+    const stockArr = [
+        { symbol: "AAPL", name: "Apple Inc.", price: 228.32, change: -1.25, changePercent: -0.54, volume: 54321000, lastUpdated: "2025-08-08T15:30:00Z" },
+        { symbol: "MSFT", name: "Microsoft Corp.", price: 432.11, change: 2.84, changePercent: 0.66, volume: 31200000, lastUpdated: "2025-08-08T15:30:00Z" },
+        { symbol: "GOOGL", name: "Alphabet Inc. (Class A)", price: 168.74, change: -0.95, changePercent: -0.56, volume: 18900000, lastUpdated: "2025-08-08T15:30:00Z" },
+        { symbol: "TSLA", name: "Tesla Inc.", price: 278.45, change: 3.15, changePercent: 1.14, volume: 42350000, lastUpdated: "2025-08-08T15:30:00Z" },
+        { symbol: "AMZN", name: "Amazon.com Inc.", price: 152.23, change: 0.45, changePercent: 0.3, volume: 28470000, lastUpdated: "2025-08-08T15:30:00Z" }
+    ];
+
+    let groupByResult = Object.groupBy(stockArr, (stockObj) => {
+        return stockObj.change > 0 ? 'profit_stocks' : 'loss_stocks';
+    })
+    console.log(groupByResult)
+</script>

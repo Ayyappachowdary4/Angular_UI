@@ -1,0 +1,15 @@
+<script>
+    let user = { name: 'sachin', age: 35, add: 'mumbai' };
+
+    let allkeys = Object.keys(user);
+    console.log(allkeys);
+
+    let allvalues = Object.values(user);
+    console.log(allvalues);
+
+    let allentries = Object.entries(user);
+    console.log(allentries);
+
+    let useObj = Object.fromEntries(allentries);
+    console.log(useObj)
+</script>

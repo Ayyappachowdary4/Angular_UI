@@ -1,0 +1,14 @@
+<script>
+    let arr1 = [10, 20, [30, 31]];
+    let arr2 = [...arr1]; // spread Operator - shallow copy - value copy
+
+    let maxResult = Math.max(10, 50, 20, 40, 30);
+    console.log(maxResult); // 50
+
+    let arr = [10, 50, 20, 40, 30];
+    let minResult = Math.min(arr); // min() doesn't accept array as argument
+    console.log(minResult); // NaN
+
+    console.log(Math.min(...arr));
+    // spread breaks the arr to individual items which are being sent as argument to min()
+</script>

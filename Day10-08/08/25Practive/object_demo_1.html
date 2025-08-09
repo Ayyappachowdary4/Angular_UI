@@ -1,0 +1,20 @@
+<script>
+    let user = { name: 'sachin', 'last name': 'tendulkar', age: 35, add: 'mumbai' };
+
+    // object length
+    console.log(Object.keys(user).length)
+
+    console.log(user.name); // sachin
+    console.log(user['age']); // 35
+
+    // console.log(user.last name);
+    console.log(user['last name']); // key has a space
+
+    let a = 'age';
+    console.log(user.a); // undefined
+    console.log(user[a]); // 35
+
+    for (key in user) {
+        console.log(key + " ======== " + user[key]);
+    }
+</script>
